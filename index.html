@@ -3,17 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Understanding DOM</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>DOM project</title>
     <script src="script.js" defer></script>
-
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <div>
-    <h1 class="heading">Old Heading</h1>
-    
+    <h2>Dynamic drop down select menu</h2>
+    <div class="placeholder"> 
+        <p>
+            selected country:<span id="country"></span>
+        </p>
+        <p>
+            selected city:<span id="city"></span>
+        </p>
+
     </div>
-  
+    <hr/>
+    <h3>please select your country and city</h3>
+    <form>
+        <select onchange="getCities(this.value)" name="countries" >
+            <option value="">Choose a Country</option>
+            <option value="England">England</option>
+            <option value="France">France</option>
+            <option value="Spain">Spain</option>
+            <option value="Germany">Germany</option>
+
+        
+        
+        </select>
+        <select onchange="getCity(this.value)" name="cities" id="cities" disabled>
+            <option value="">Choose a city </option>
+
+        </select>
+    </form>
     
 </body>
 </html>

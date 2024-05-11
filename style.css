@@ -13,3 +13,25 @@ button{
 body{
     background: pink;
 }
+.box{
+    display:inline-block;
+    height: 200px;
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 3px;
+    text-align: center;
+    background-color: grey;
+    color: white;
+    
+   
+}
+.para{
+    color: black;
+    font-size: large;
+
+
+    font-family: 'Times New Roman', Times, serif;
+}
+.newClass{
+    background-color: aquamarine;
+}
